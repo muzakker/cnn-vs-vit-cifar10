@@ -25,7 +25,6 @@ Our experiments show a clear progression in performance. It highlights the power
 * **Rapid Convergence**: Due to its robust pre-trained features, the DINOv2 model converged extremely quickly and achieved over 95% validation accuracy within the first 10 epochs of training.
 * **Architectural Value**: The DenseNet model's architecture, with its emphasis on feature reuse, provided a substantial accuracy boost over the baseline CNN, making it a strong intermediate choice.
 
-<img width="406" height="301" alt="training curve for dinov2 modele" src="images/dinov2_training_curves.png" />
 ![The training and validation curves for our fine-tuned DINOv2 model, showing rapid convergence and stable performance](images/dinov2_training_curves.png)
 *The training and validation curves for our fine-tuned DINOv2 model, showing rapid convergence and stable performance.*
 
