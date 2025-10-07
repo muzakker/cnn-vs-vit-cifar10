@@ -6,9 +6,9 @@ This repository contains the final project for COMS 573, presenting a comparativ
 Our key achievement was fine-tuning the state-of-the-art DINOv2-Small model using a parameter-efficient approach, where we updated only 8.06% of its total parameters to achieve an impressive 95.95% test accuracy.
 
 ## Team Members
-- Md Muzakker Hossain: DINO-v2 pre-trained ViT + fine-tune with LoRA + Evaluation
-- Nhat Le: custom CNN model + Architectures + Evaluation
-- Jasper Khor: Data Preprocessing
+- **Md Muzakker Hossain:** DINO-v2 pre-trained ViT + fine-tune with LoRA + Evaluation
+- **Nhat Le:** custom CNN model + Architectures + Evaluation
+- **Jasper Khor:** Data Preprocessing
 
 ## Key Findings & Results
 Our experiments show a clear progression in performance, highlighting the power of modern architectures and transfer learning.
