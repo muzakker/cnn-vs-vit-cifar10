@@ -31,9 +31,9 @@ Our experiments show a clear progression in performance. It highlights the power
 
 ## Repository Structure
 This repository is organized to provide a complete overview of our project methodology and findings.
-* [`COMS_573_Final_Project.pdf`](COMS_573_Final_Project.pdf): The complete project report containing detailed methodology, analysis, and conclusions.
-* `notebooks/`: Jupyter/Colab notebooks used for implementing, training, and evaluating the models.
-* `images/`: Contains diagrams and plots used in the report and this README.
+* [`COMS_5730_Final_Project.pdf`](COMS_5730_Final_Project.pdf): The complete project report containing detailed methodology, analysis, and conclusions.
+* [`notebooks/`](notebooks/): Jupyter/Colab notebooks used for implementing, training, and evaluating the models.
+* [`images/`](images/): Contains diagrams and plots used in the report and this README.
 
 ## Dataset & Preprocessing
 We used the **CIFAR-10 dataset**, a standard benchmark for image classification.
