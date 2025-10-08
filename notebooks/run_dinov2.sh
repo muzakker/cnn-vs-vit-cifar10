@@ -415,26 +415,6 @@ def main(args):
         plt.tight_layout()
         plt.savefig('dinov2_training_curves.png')
         
-        # Save model configuration for reference
-        with open('dinov2_config.txt', 'w') as f:
-            f.write("DINOv2-Small on CIFAR-10 - Configuration\n")
-            f.write("="*50 + "\n\n")
-            f.write(f"Base model: DINOv2-Small (dinov2_vits14)\n")
-            f.write(f"Input size: 224x224 (resized from 32x32)\n")
-            f.write(f"Embedding dimension: {model.embed_dim}\n")
-            f.write(f"Batch size: {BATCH_SIZE}\n")
-            f.write(f"Gradient accumulation steps: {GRAD_ACCUMULATION_STEPS}\n")
-            f.write(f"Effective batch size: {BATCH_SIZE * GRAD_ACCUMULATION_STEPS}\n")
-            f.write(f"Learning rate: {LEARNING_RATE}\n")
-            f.write(f"Weight decay: {WEIGHT_DECAY}\n")
-            f.write(f"Training epochs: {EPOCHS}\n")
-            f.write(f"Optimizer: AdamW\n")
-            f.write(f"Scheduler: CosineAnnealingLR\n")
-            f.write(f"Total parameters: {total_params:,}\n")
-            f.write(f"Trainable parameters: {trainable_params:,} ({trainable_params/total_params:.2%} of total)\n")
-            f.write(f"Final validation accuracy: {best_val_acc:.2f}%\n")
-            f.write(f"Test accuracy: {test_acc:.2f}%\n")
-        
         return test_acc, best_val_acc
     
     except Exception as e:
