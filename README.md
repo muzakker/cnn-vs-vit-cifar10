@@ -34,13 +34,12 @@ This repository is organized to provide a complete overview of our project metho
 * `COMS_573_Final_Project.pdf`: The complete project report containing detailed methodology, analysis, and conclusions.
 * `notebooks/`: Jupyter/Colab notebooks used for implementing, training, and evaluating the models.
 * `images/`: Contains diagrams and plots used in the report and this README.
-* `dataset/`: Information regarding the CIFAR-10 dataset used for this project.
 
 ## Dataset & Preprocessing
 We used the **CIFAR-10 dataset**, a standard benchmark for image classification.
-* Classes**: 10 (airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck)
-* Image Size**: 32x32 RGB color images 
-* Split**: The original 50,000 training images were split into 45,000 for training and 5,000 for validation. The 10,000 test images were used for final evaluation.
+* **Classes**: 10 (airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck)
+* **Image Size**: 32x32 RGB color images 
+* **Split**: The original 50,000 training images were split into 45,000 for training and 5,000 for validation. The 10,000 test images were used for final evaluation.
 
 ### Preprocessing Steps:
 For the training set, we applied data augmentation to improve model generalization:
