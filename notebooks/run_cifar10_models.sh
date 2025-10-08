@@ -16,7 +16,7 @@ echo "Node: $SLURM_JOB_NODELIST"
 echo "Start Time: $(date)"
 
 # Define paths
-CONDA_PATH="/work/LAS/jannesar-lab/muzakker/For_Programl/PATH/miniconda3"
+CONDA_PATH="/define/your/PATH/miniconda3"
 ENV_NAME="dinov2_env"
 
 # Activate conda
@@ -45,7 +45,6 @@ cat > train_dinov2.py << 'EOF'
 """
 DINOv2-Small implementation for CIFAR-10
 - Uses the official DINOv2-Small model directly from Facebook Research via PyTorch Hub
-- Designed to work with limited GPU memory
 """
 import os
 import torch
@@ -454,9 +453,6 @@ if __name__ == '__main__':
 EOF
 
 # Training script
-echo "=========================================================================="
-echo "Training DINOv2-Small Model on CIFAR-10"
-echo "=========================================================================="
 START_TIME=$(date +%s)
 
 # Run the DINOv2 implementation
@@ -467,9 +463,6 @@ ELAPSED=$((END_TIME - START_TIME))
 echo "DINOv2-Small training completed in $ELAPSED seconds ($(($ELAPSED / 3600)) hours $(($ELAPSED % 3600 / 60)) minutes)"
 
 # Copy results back
-echo "=========================================================================="
-echo "Making results available in parent directory"
-echo "=========================================================================="
 for file in dinov2_best.pth dinov2_training_curves.png dinov2_config.txt; do
     if [ -f "$file" ]; then
         cp $file ../
@@ -481,6 +474,4 @@ done
 conda deactivate
 
 # Print completion
-echo "=========================================================================="
 echo "Job completed at $(date)"
-echo "=========================================================================="
